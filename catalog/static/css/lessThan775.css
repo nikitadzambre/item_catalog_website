@@ -1,0 +1,23 @@
+.categories {
+	width: 40%;
+}
+
+.item-title {
+	margin: 4%;
+	margin-bottom: 1%;
+}
+
+.description {
+	margin: 4%;
+	margin-top: 1%;
+}
+
+.links-update {
+	margin: 4%;
+	margin-top: 1%;
+}
+
+.form {
+	margin: 4%;
+	margin-top: 0px;
+}

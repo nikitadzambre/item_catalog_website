@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Catalog of Items</title>
+	<link rel="stylesheet" type="text/css" href="/../static/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+	<link rel="stylesheet" media="(max-width: 775px)" href="/../static/css/lessThan775.css">
+	<link rel="stylesheet" media="(max-width: 640px)" href="/../static/css/lessThan640.css">
+	<link rel="stylesheet" media="(max-width: 525px)" href="/../static/css/lessThan525.css">
+	<link rel="stylesheet" media="(max-width: 515px)" href="/../static/css/lessThan515.css">
+	<link rel="stylesheet" media="(max-width: 372px)" href="/../static/css/lessThan372.css">
+	<script type="text/javascript" src="/../static/js/mq.genie.js"></script>
+</head>
+<body>
+	<header class='header'>
+		<div class="header-title">
+			<h1><a class='home-page' href='{{url_for('showCategories')}}'>Catalog of Items</a></h1>
+		</div>
+		
+		{% if('username' not in login_session) %}
+			<div class='log-button'>
+				<a class='button' href='{{url_for('showLogin')}}'>Login</a>
+			</div>
+			{% else %}
+			<div class='log-button'>
+				<a class='button' href='{{url_for('gdisconnect')}}'>Logout</a>
+			</div>
+		{% endif %}
+	</header>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<br><div class='link flash-msg'>{{message}}</div>
+			{% endfor %}
+			</ul>
+		{% endif %}
+	{% endwith %}
+	<main class='content content-description'>
+		<section class='categories'>
+			<h1 class='title'>Categories</h1>
+			<br>
+			{% for c in categories %}
+				<div class='link-div'><a class='link' href='{{url_for('showItems', category_name = c.name)}}'>{{c.name}}</a></div>
+			{% endfor %}
+		</section>
+		
+		<section class='latest-items'>
+			<h1 class='title'>Latest Items</h1>
+			<br>
+			{% if(latest_items != []) %}
+				{% for l in latest_items %}
+					<div class='link-div'><a class='link' href='{{url_for('showItemDetails', category_name = l.category_name, item_name = l.title)}}'>{{l.title}}</a>
+					<span class='info-name'>({{l.category_name}})</span>
+					</div>
+				{% endfor %}
+			{% else %}
+				<p class='link'>No Items to show.</p>
+			{% endif %}
+			{% if('username' in login_session) %}
+			<br><div><a class='button' href='{{url_for('addItem')}}'>Add Item</a></div>
+			{% endif %}
+		</section>
+	</main>
+</body>
+</html>

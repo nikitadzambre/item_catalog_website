@@ -1,0 +1,187 @@
+body {
+	margin-top: 10px;
+	background-color: #ffe6e6;
+}
+
+header section article div {
+  box-sizing: border-box;
+}
+
+h1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	width: 100%;
+}
+
+.header {
+	width: 100%;
+	background-color: #ff4d4d;
+	border-radius: 10px;
+}
+
+.header-title {
+	display: inline-block;	
+	margin-left: 5%;
+	font-family: 'Signika', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	text-shadow: 2px 2px #739900;
+	margin-right: 5%;
+}
+
+.home-page {
+	text-decoration: none;
+	color: white;
+}
+
+.log-button {
+	float: right;
+    margin-top: 15px;
+	margin-right: 5%;
+}
+
+.button {
+	background-color: #86b300;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+	font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px black;
+	display: block;
+	width: 80px;
+}
+
+.categories {
+	width: 30%;
+    padding: 3%;
+	border-right: solid;
+}
+
+.title {
+	font-family: 'Signika', sans-serif;
+	font-size: 30px;
+	color: #86b300;
+	background-color: #ffe6e6;
+	border-left: solid 5px #ff4d4d;
+	padding-left: 15px;
+}
+
+.link {
+	font-family: 'Signika', sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+	color: #ff4d4d;
+}
+
+.content {
+	display: flex;
+}
+
+.latest-items {
+	width: 70%;
+    padding: 3%;
+}
+
+.info-name {
+	font-family: 'Signika', sans-serif;
+}
+
+#signInButton{
+	margin-top: 3%;
+}
+
+.login-title {
+	font-family: 'Signika', sans-serif;
+	font-size: 25px;
+	color: #86b300;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 3%;
+}
+
+.description {
+	font-family: 'Signika', sans-serif;
+    font-size: 22px;
+    color: #ff4d4d;
+    margin: 3%;
+	margin-top: 1%;
+}
+
+.item-title {
+    font-size: 35px;
+	margin: 3%;
+	margin-bottom: 1%;
+	text-transform: uppercase;
+}
+
+.content-description {
+	margin: 5%;
+    border: solid;
+    border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top: 20px;
+	background-color: white;
+	max-width: 100%;
+}
+
+.links-update {
+    margin: 3%;
+	margin-top: 1%;
+	display: flex;
+}
+
+.result-login {
+	font-family: 'Signika', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+    color: #86b300;
+	margin: 3%;
+	margin-top: 1%;
+}
+
+.form{
+	margin: 3%;
+	margin-top: 0px;
+}
+
+.form-font {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
+}
+
+.margin-cancel {
+	margin-top: 0px;
+}
+
+.logout-msg {
+	margin: 3%;
+}
+
+.font-text {
+	text-transform: capitalize;
+}
+
+.link-div {
+	margin-bottom: 5px;
+}
+
+.margin-gap {
+	margin-right: 20px;
+}
+
+.delete-width {
+	width: 90px;	
+}
+
+.flash-msg {
+	margin-left: 5%;
+}

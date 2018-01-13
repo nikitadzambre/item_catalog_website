@@ -1,0 +1,56 @@
+.categories {
+	width: 60%;
+}
+
+.info-name:before {
+	content:"\a";
+    white-space: pre;
+}
+
+.header-title {
+	font-size: 18px;
+}
+
+.log-button {
+    margin-top: 12px;
+}
+
+.item-title {
+	font-size: 32px;
+	margin: 5%;
+	margin-bottom: 1%;
+}
+
+.links-update {
+	margin: 5%;
+	margin-top: 1%;
+}
+
+.description {
+	font-size: 20px;
+	margin: 5%;
+	margin-top: 1%;
+}
+
+.form {
+	margin: 5%;
+	margin-top: 0px;
+}
+
+.login-title {
+	padding-left: 5%;
+    padding-right: 5%;
+	padding-top: 4%;
+}
+
+#signInButton {
+    margin-top: 4%;
+}
+
+.link {
+	font-size: 20px;
+}
+
+.title {
+	font-size: 28px;
+}

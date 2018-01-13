@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Add Item</title>
+	<link rel="stylesheet" type="text/css" href="/../static/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika|PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" media="(max-width: 775px)" href="/../static/css/lessThan775.css">
+	<link rel="stylesheet" media="(max-width: 640px)" href="/../static/css/lessThan640.css">
+	<link rel="stylesheet" media="(max-width: 525px)" href="/../static/css/lessThan525.css">
+	<link rel="stylesheet" media="(max-width: 515px)" href="/../static/css/lessThan515.css">
+	<link rel="stylesheet" media="(max-width: 372px)" href="/../static/css/lessThan372.css">
+	<script type="text/javascript" src="/../static/js/mq.genie.js"></script>
+</head>
+<body>
+	<header class='header'>
+		<div class="header-title">
+			<h1><a class='home-page' href='{{url_for('showCategories')}}'>Catalog of Items</a></h1>
+		</div>
+		
+		<div class='log-button'>
+			<a class='button' href='{{url_for('gdisconnect')}}'>Logout</a>
+		</div>
+	</header>
+	
+	<main class='content-description'>
+		<section>
+			<h1 class='title item-title'>Add Item</h1>
+		</section>
+		
+		<form action='{{url_for('addItem')}}', method='post' class='form'>
+			<label for='title' class='link form-title'>Title</label>
+			<br>
+			<input type='text' maxlength='50' name='title' class='form-font font-text' placeholder='Name of the Item'>
+			</br><br>
+			<label for='description' class='link form-title'>Description</label>
+			<br>
+			<textarea maxlength='500' rows='5' name='description' class='form-font' placeholder='Description of the Item'></textarea>
+			</br><br>
+			<label for='category' class='link form-title'>Category</label>
+			<br>
+			<select name='category' class='form-font'>
+				{% for c in categories %}
+					<option value='{{c.name}}'>{{c.name}}</option>
+				{% endfor %}
+			</select>
+			</br><br>
+			<input type='submit' value='Add' class='button'>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.header-title {
+	font-size: 15px;
+}
+
+.header {
+	height: 125px;
+}
+
+.item-title {
+	margin: 8%;
+	margin-bottom: 1%;
+}
+
+.description {
+	margin: 8%;
+	margin-top: 1%;
+}
+
+.form {
+	margin: 8%;
+	margin-top: 0px;
+}
+
+.links-update {
+	margin: 8%;
+	margin-top: 1%;
+}
+
+.height {
+	height: auto;
+}
+
+.button {
+	font-size: 18px;
+}
+
+.login-title {
+	font-size: 22px;
+}
+
+.welcome-font {
+	font-size: 22px;
+}
+
+.link {
+	font-size: 18px;
+}

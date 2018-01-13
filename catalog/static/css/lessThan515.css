@@ -1,0 +1,31 @@
+.content {
+	display: block;
+}
+
+.categories {
+	width: 90%;
+    padding: 5%;
+	border: none;
+}
+
+.latest-items {
+	width: 90%;
+    padding: 5%;
+}
+
+.align {
+	text-align: center;
+}
+
+.result-login {
+	text-align: center;
+}
+
+.height {
+	height: auto;
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+}
